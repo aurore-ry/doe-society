@@ -1,11 +1,14 @@
 //depths
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { FC } from "react";
 //types
-import { CommonProps } from "../../types";
+import { CommonProps } from "../types";
 //icons
-import { HelloDoe } from "../../icones/HelloDoe";
-import { Colors } from "../../utiles";
+import { HelloDoe } from "../icones/HelloDoe";
+//components
+import { ButtonAnchor } from "../component/Button.styled";
+import { Colors } from "../utiles";
+import { GlobalStyle } from "../component/GlobalStyle.styled";
 
 export interface HomeViewProps extends CommonProps {}
 
@@ -13,12 +16,15 @@ export interface HomeViewProps extends CommonProps {}
 export const HomeView: FC<HomeViewProps> = ({}) => {
   return (
     <Layout>
+      <GlobalStyle />
       <StyledHomeWrapper>
         <h1>Hello Doe!</h1>
         <HelloDoe />
         <StyledRow>
-          <Button>Sign in</Button>
-          <Button $primary>Sign up</Button>
+          <ButtonAnchor>Sign in</ButtonAnchor>
+          <ButtonAnchor $primary href={"/register"}>
+            Sign up
+          </ButtonAnchor>
         </StyledRow>
       </StyledHomeWrapper>
     </Layout>
@@ -28,6 +34,7 @@ export const HomeView: FC<HomeViewProps> = ({}) => {
 const Layout = styled.div`
   width: 100%;
   height: 100%;
+  background: ${Colors.DARK_BLACK};
 `;
 
 const StyledHomeWrapper = styled.div`
@@ -39,9 +46,7 @@ const StyledHomeWrapper = styled.div`
   gap: 8px;
   padding: 32px 0 32px 0;
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
-  margin-top: 16px;
 `;
 
 const StyledRow = styled.div`
@@ -49,29 +54,4 @@ const StyledRow = styled.div`
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-`;
-
-const Button = styled.button<{ $primary?: boolean }>`
-  height: 38px;
-  width: 122px;
-  background: transparent;
-  border-radius: 3px;
-  border: 2px solid ${Colors.PRIMARY};
-  font-size: 16px;
-  color: ${Colors.PRIMARY};
-  margin: 0.5em 1em;
-  padding: 0.25em 1em;
-
-  &:hover {
-    cursor: pointer;
-    filter: brightness(0.76);
-    border-color: ${Colors.GOLD};
-  }
-
-  ${(props) =>
-    props.$primary &&
-    css`
-      background: ${Colors.PRIMARY};
-      color: white;
-    `}
 `;

@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
-import { HomeView } from "./views/HomeView/HomeView";
+import { HomeView } from "./views/HomeView";
+import { AppRouter } from "./component/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      <HomeView commonProps={{ isLogged: false, title: "Home" }} />
+      <AppRouter></AppRouter>
     </div>
   );
 }
