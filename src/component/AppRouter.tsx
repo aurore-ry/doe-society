@@ -13,7 +13,7 @@ export const AppRouter = () => {
             <HomeView commonProps={{ isLogged: false, title: "Home" }} />
           }
         />
-        <Route path="/register" element={<RegisterView isLogged={false} />} />
+        <Route path="/signup" element={<RegisterView isLogged={false} />} />
         <Route path="/dashboard" element={<DashboardView isLogged={false} />} />
       </Routes>
     </Router>

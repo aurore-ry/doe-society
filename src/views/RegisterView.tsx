@@ -19,7 +19,7 @@ export const RegisterView: FC<RegisterViewProps> = () => {
       <GlobalStyle />
       <RegisterHeadLine>Fall down the rabbit hole :)</RegisterHeadLine>
       <FormContainer>
-        <form action={"/register"} method={"POST"}>
+        <form method={"POST"} action={"http://localhost:3000/auth/signup"}>
           <InputGroup>
             <StyledLabel htmlFor={"email"}>Email</StyledLabel>
             <Input type="email" name={"email"} id={"email"} />
