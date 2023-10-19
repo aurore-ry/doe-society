@@ -33,13 +33,13 @@ export const RegisterView: FC<RegisterViewProps> = () => {
             <Input type="password" name={"password"} id={"password"} />
           </InputGroup>
           <InputGroup>
-            <StyledLabel htmlFor={"confirm_password"}>
+            <StyledLabel htmlFor={"passwordConfirm"}>
               Confirm your password
             </StyledLabel>
             <Input
               type="password"
-              name={"confirm_password"}
-              id={"confirm_password"}
+              name={"passwordConfirm"}
+              id={"passwordConfirm"}
             />
           </InputGroup>
           <Button type={"submit"}>Register</Button>
