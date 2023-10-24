@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../component/Button.styled";
 import { FormContainer } from "../component/Form.styled";
-import { GlobalStyle } from "../component/GlobalStyle.styled";
 import { Input, InputGroup } from "../component/Input.styled";
 import { StyledLabel } from "../component/Label.styled";
 import { StyledRow, StyledWrapper } from "../component/Layout.styled";
@@ -12,12 +11,11 @@ export const SignInView = () => {
   return (
     <div>
       <StyledWrapper>
-        <GlobalStyle />
-        <SignInHeadLine>Nice to see you again dear user!</SignInHeadLine>
         <BoxContainer>
           <StyledRow>
-            <SignInIcon size={128} />
             <FormContainer>
+              <SignInHeadLine>Sign in</SignInHeadLine>
+              <SignInIcon size={26} />
               <form
                 method={"POST"}
                 action={"http://localhost:3000/auth/signin"}

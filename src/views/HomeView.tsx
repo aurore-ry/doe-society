@@ -7,7 +7,6 @@ import { CommonProps } from "../types";
 import { HelloDoe } from "../icones/HelloDoe";
 //components
 import { ButtonAnchor } from "../component/Button.styled";
-import { GlobalStyle } from "../component/GlobalStyle.styled";
 import { StyledWrapper, StyledRow } from "../component/Layout.styled";
 import { HomeHeadLine } from "../component/Typography.styled";
 
@@ -17,7 +16,6 @@ export interface HomeViewProps extends CommonProps {}
 export const HomeView: FC<HomeViewProps> = ({}) => {
   return (
     <div>
-      <GlobalStyle />
       <StyledWrapper>
         <HomeHeadLine>Hello dear Doe!</HomeHeadLine>
         <HelloDoe />

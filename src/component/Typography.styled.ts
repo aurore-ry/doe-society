@@ -4,7 +4,6 @@ import { Colors } from "../utiles";
 export const HeadLine = css`
   font-size: 36px;
   font-family: sans-serif;
-  color: ${Colors.RED_FLASHY};
 `;
 
 export const HomeHeadLine = styled.h1`
@@ -18,5 +17,6 @@ export const RegisterHeadLine = styled.h1`
 `;
 
 export const SignInHeadLine = styled.h1`
-  ${HeadLine}
+  color: ${Colors.GRAY_LIGHT_03};
+  ${HeadLine};
 `;

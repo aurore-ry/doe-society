@@ -4,8 +4,8 @@ import { IconProps } from "./type";
 export const SignInIcon: FC<IconProps> = () => {
   return (
     <svg
-      width={"size"}
-      height={"size"}
+      width={"138px"}
+      height={"138px"}
       viewBox="0 0 800 778"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

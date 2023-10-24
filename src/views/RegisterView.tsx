@@ -8,7 +8,6 @@ import { Input, InputGroup } from "../component/Input.styled";
 import { StyledLabel } from "../component/Label.styled";
 import { Button } from "../component/Button.styled";
 import { FormContainer } from "../component/Form.styled";
-import { GlobalStyle } from "../component/GlobalStyle.styled";
 import { RegisterHeadLine } from "../component/Typography.styled";
 
 export interface RegisterViewProps extends CommonViewProps {}
@@ -16,7 +15,6 @@ export interface RegisterViewProps extends CommonViewProps {}
 export const RegisterView: FC<RegisterViewProps> = () => {
   return (
     <PageWrapper>
-      <GlobalStyle />
       <RegisterHeadLine>Fall down the rabbit hole :)</RegisterHeadLine>
       <FormContainer>
         <form method={"POST"} action={"http://localhost:3000/auth/signup"}>
@@ -37,7 +35,7 @@ export const RegisterView: FC<RegisterViewProps> = () => {
               Confirm your password
             </StyledLabel>
             <Input
-              type="password"
+              type={"password"}
               name={"passwordConfirm"}
               id={"passwordConfirm"}
             />

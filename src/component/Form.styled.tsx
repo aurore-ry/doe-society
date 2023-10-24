@@ -7,11 +7,11 @@ export const FormContainer = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  gap: 12px;
 
-  background-color: #202020dc;
+  background-color: #20202016;
   border-radius: 4px;
-  box-shadow: rgba(151, 0, 0, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgba(151, 0, 0, 0.25) 0px 30px 60px -12px;
 
   & > form {
     display: flex;

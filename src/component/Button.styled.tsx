@@ -12,7 +12,6 @@ const baseButtonCss = css<{ $primary?: boolean }>`
   border-radius: 3px;
   border: 2px solid ${Colors.PRIMARY};
   font-size: 16px;
-  color: ${Colors.WHITE_01};
   margin: 0.5em 1em;
   padding: 0.25em 1em;
 
@@ -25,8 +24,8 @@ const baseButtonCss = css<{ $primary?: boolean }>`
   ${(props) =>
     props.$primary &&
     css`
-      background: ${Colors.PRIMARY};
       color: ${Colors.WHITE_01};
+      background: ${Colors.PRIMARY};
     `}
 `;
 

@@ -13,7 +13,7 @@ export const InputGroup = styled.div`
 
 export const Input = styled.input`
   padding: 6px 6px;
-  background-color: ${Colors.SOFT_BLACK};
+  background-color: #0101014f;
   color: ${Colors.WHITE_01};
   border: none;
   border-radius: 4px;
