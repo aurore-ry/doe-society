@@ -7,7 +7,9 @@ import {
   darkTheme,
   lightTheme,
 } from "./component/GlobalStyle.styled";
-import { Button } from "./component/Button.styled";
+import SwitchMode from "./component/Switch";
+import { AppBar } from "./component/AppBar";
+import { StyledRow } from "./component/Layout.styled";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -18,7 +20,8 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
       <div className="App">
-        <Button onClick={switchTheme}>Switch here</Button>
+        <AppBar />
+        <SwitchMode theme={theme} switchTheme={switchTheme} />
         <AppRouter />
       </div>
     </ThemeProvider>

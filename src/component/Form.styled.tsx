@@ -11,7 +11,7 @@ export const FormContainer = styled.div`
 
   background-color: #20202016;
   border-radius: 4px;
-  box-shadow: rgba(151, 0, 0, 0.25) 0px 30px 60px -12px;
+  box-shadow: rgba(161, 101, 251, 0.25) 0px 30px 60px -12px;
 
   & > form {
     display: flex;

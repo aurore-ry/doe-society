@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -8,8 +10,6 @@ export const StyledWrapper = styled.div`
 
   gap: 8px;
   padding: 32px 0 32px 0;
-  width: 100%;
-  margin: 0 auto;
 `;
 
 export const StyledRow = styled.div`

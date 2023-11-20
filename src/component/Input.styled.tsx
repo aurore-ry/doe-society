@@ -13,21 +13,21 @@ export const InputGroup = styled.div`
 
 export const Input = styled.input`
   padding: 6px 6px;
-  background-color: #0101014f;
-  color: ${Colors.WHITE_01};
+  background-color: #d0aae762;
+  color: ${Colors.PRIMARY} !important;
   border: none;
   border-radius: 4px;
 
   &#username {
-    color: ${Colors.WHITE_01};
+    color: ${Colors.PRIMARY} !important;
     font-weight: bold;
   }
 
   &#password {
-    color: ${Colors.WHITE_01};
+    color: ${Colors.PRIMARY} !important;
   }
 
   &:focus {
-    outline: 1px solid ${Colors.GOLD};
+    outline: 1px solid ${Colors.PRIMARY};
   }
 `;

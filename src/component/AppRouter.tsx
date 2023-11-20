@@ -3,6 +3,7 @@ import { HomeView } from "../views/HomeView";
 import { RegisterView } from "../views/RegisterView";
 import { DashboardView } from "../views/DashboardView";
 import { SignInView } from "../views/SignInView";
+import { CreatePostView } from "../views/CreatePostView";
 
 export const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ export const AppRouter = () => {
         <Route path="/signup" element={<RegisterView isLogged={false} />} />
         <Route path="/signin" element={<SignInView />} />
         <Route path="/dashboard" element={<DashboardView isLogged={false} />} />
+        <Route path="/CreatePost" element={<CreatePostView />} />
       </Routes>
     </Router>
   );

@@ -4,7 +4,7 @@ import Colors from "../utiles/Colors";
 
 export const lightTheme = {
   body: `${Colors.WHITE_01}`,
-  textColor: `${Colors.PRIMARY}`,
+  textColor: `${Colors.SOFT_BLACK}`,
 };
 
 export const darkTheme = {
@@ -25,5 +25,4 @@ export const GlobalStyle = createGlobalStyle`
   button {
     color: ${(props) => props.theme.textColor};
   }
-  
   `;

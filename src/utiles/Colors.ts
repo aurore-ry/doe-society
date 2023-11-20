@@ -1,5 +1,5 @@
 const Colors = {
-  PRIMARY: "#780a0a",
+  PRIMARY: "#967bb6",
   GOLD: "#D98C19",
   SECONDARY_01: "#23024d",
   BLACK_01: "#111111",
@@ -13,7 +13,6 @@ const Colors = {
   GRAY_DARK_02: "#444444",
   GRAY_DARK_03: "#B6B6B6",
   GRAY_ULTIMATE_DARK: "#212121",
-  RED_01: " #620000 ",
   RED_FLASHY: "#ff0000",
   WHITE_01: "#FFFFFF",
 };
