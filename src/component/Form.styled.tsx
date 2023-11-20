@@ -9,7 +9,7 @@ export const FormContainer = styled.div`
   align-items: center;
   gap: 12px;
 
-  background-color: #20202016;
+  background-color: #76767615;
   border-radius: 4px;
   box-shadow: rgba(161, 101, 251, 0.25) 0px 30px 60px -12px;
 
